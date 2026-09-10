@@ -1,6 +1,6 @@
 class Solution:
     def checkSubarraySum(self, nums: List[int], k: int) -> bool:
-        remainder = {0: -1}
+        remainder = {0 : -1}
         prefix_sum = 0
 
         for i in range(len(nums)):
@@ -12,5 +12,4 @@ class Solution:
                     return True
             else:
                 remainder[rem] = i
-
         return False
